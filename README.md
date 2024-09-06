@@ -17,6 +17,7 @@ Se requiere que la estación de peaje calcule el valor del peaje de cada vehícu
 
 ## Diagrama de clases 
 
+![image](https://github.com/user-attachments/assets/354c59ae-749d-4eeb-a6d3-361668bdd70e)
 
 ## % Cobertura testing
 
