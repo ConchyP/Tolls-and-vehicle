@@ -11,9 +11,9 @@ public class TollStationTest {
 
     @Test
     public void testTollStation() {
-        TollStation tollStation = new TollStation("West Gate", "Madrid");
+        TollStation tollStation = new TollStation("Peaje Centro", "Madrid");
 
-        assertEquals("West Gate", tollStation.getName());
+        assertEquals("Peaje Centro", tollStation.getName());
         assertEquals("Madrid", tollStation.getCity());
         assertEquals(0.0, tollStation.getTotalCollected(), 0.01);
         assertTrue(tollStation.getVehicles().isEmpty());
@@ -21,9 +21,9 @@ public class TollStationTest {
 
     @Test
     public void testAddVehicle() {
-        TollStation tollStation = new TollStation("North Gate", "Leon");
-        Car car1 = new Car("1234XYZ");
-        Car car2 = new Car("5678BBC");
+        TollStation tollStation = new TollStation("Peaje Centro", "Madrid");
+        Car car1 = new Car("3453JKL");
+        Car car2 = new Car("5765KML");
 
         tollStation.addVehicle(car1);
         tollStation.addVehicle(car2);
@@ -37,17 +37,17 @@ public class TollStationTest {
 
     @Test
     public void testGetTollCollected() {
-        TollStation tollStation = new TollStation("South Gate", "Asturias");
-        Truck truck1 = new Truck("1234XYZ", 6);
+        TollStation tollStation = new TollStation("Peaje Centro", "Madrid");
+        Truck truck1 = new Truck("3453KHJ", 4);
 
         tollStation.addVehicle(truck1);
 
-        assertEquals(300, tollStation.getTotalCollected(), 0.01);
+        assertEquals(200, tollStation.getTotalCollected(), 0.01);
     }
 
     @Test
     public void testGetTolLCollectedWithCar() {
-        TollStation tollStation = new TollStation("South Gate", "Asturias");
+        TollStation tollStation = new TollStation("Peaje Centro", "Madrid");
         Car car1 = new Car("ABC123");
 
         tollStation.addVehicle(car1);
@@ -57,8 +57,8 @@ public class TollStationTest {
 
     @Test
     public void testGetTolLCollectedWithMotorcycle() {
-        TollStation tollStation = new TollStation("South Gate", "Asturias");
-        Motorcycle motorcycle1 = new Motorcycle("DEF456");
+        TollStation tollStation = new TollStation("Peaje Centro", "Madrid");
+        Motorcycle motorcycle1 = new Motorcycle("3453FTY");
 
         tollStation.addVehicle(motorcycle1);
 
@@ -67,8 +67,8 @@ public class TollStationTest {
 
     @Test
     public void testGetTolLCollectedWithTruck() {
-        TollStation tollStation = new TollStation("South Gate", "Asturias");
-        Truck truck1 = new Truck("1234XYZ", 6);
+        TollStation tollStation = new TollStation("Peaje Centro", "Madrid");
+        Truck truck1 = new Truck("3456GTR", 6);
 
         tollStation.addVehicle(truck1);
 
@@ -77,10 +77,10 @@ public class TollStationTest {
 
     @Test
     public void testPrintReport() {
-        TollStation tollStation = new TollStation("South Gate", "Asturias");
-        Car car1 = new Car("ABC123");
-        Motorcycle motorcycle1 = new Motorcycle("DEF456");
-        Truck truck1 = new Truck("1234XYZ", 6);
+        TollStation tollStation = new TollStation("Peaje Centro", "Madrid");
+        Car car1 = new Car("4563JKS");
+        Motorcycle motorcycle1 = new Motorcycle("7689LMN");
+        Truck truck1 = new Truck("3231KKL", 4);
 
         tollStation.addVehicle(car1);
         tollStation.addVehicle(motorcycle1);

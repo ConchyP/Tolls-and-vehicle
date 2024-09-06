@@ -19,3 +19,5 @@ Se requiere que la estación de peaje calcule el valor del peaje de cada vehícu
 
 
 ## % Cobertura testing
+
+![alt text](image.png)
