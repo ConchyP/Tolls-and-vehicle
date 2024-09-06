@@ -2,14 +2,15 @@ package dev.conchy;
 
 public abstract class Vehicle {
 
-    private String carRegistration;
+    private String licensePlate;
 
-    public Vehicle(String carRegistration){
-    this.carRegistration = carRegistration;
+    public Vehicle(String licensePlate){
+    this.licensePlate = licensePlate;
     }
 
-    public String getCarRegistration() {
-        return carRegistration;
+
+    public String getLicensePlate() {
+        return licensePlate;
     }
 
     public abstract int calculateToll();

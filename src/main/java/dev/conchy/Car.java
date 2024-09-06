@@ -2,8 +2,8 @@ package dev.conchy;
 
 public class Car extends Vehicle {
 
-    public Car(String carRegistration) {
-        super(carRegistration);
+    public Car(String licensePlate) {
+        super(licensePlate);
     }
 
     @Override

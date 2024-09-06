@@ -11,7 +11,7 @@ public class TollStation {
   private List<Vehicle> vehicles;
 
 
-  public TollStation(String name, String city, int i, ArrayList arrayList) {
+  public TollStation(String name, String city) {
     this.name = name;
     this.city = city;
     this.totalCollected = 0;
@@ -44,8 +44,6 @@ public class TollStation {
   public List<Vehicle> getVehicles() {
     return vehicles;
   }
-
-
 
 
 }

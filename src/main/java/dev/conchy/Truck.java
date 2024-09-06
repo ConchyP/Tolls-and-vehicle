@@ -2,17 +2,18 @@ package dev.conchy;
 
 public class Truck extends Vehicle {
 
-    private int axes;
+    private int axies;
 
-    public Truck(String carRegistration, int axes) {
-        super(carRegistration);
-        this.axes = axes;
+
+    public Truck(String licensePlate, int axies) {
+        super(licensePlate);
+        this.axies = axies;
     }
-    
+
 
     @Override
     public int calculateToll() {
-        return axes * 50;
+        return axies * 50;
     }
     
 }
